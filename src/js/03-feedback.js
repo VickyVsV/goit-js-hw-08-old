@@ -34,9 +34,10 @@ function onFormSubmit(e) {
   const {
     elements: { email, message }
   } = e.currentTarget;
-  console.log("email: " + email.value, "message: " + message.value);
+  //console.log("email: " + email.value, "message: " + message.value);
+  console.log(localValue);
   localStorage.removeItem(LOCALSTORAGE_KEY);
-  
+  e.target.reset();
 }
 
 function onCheckForm() {
